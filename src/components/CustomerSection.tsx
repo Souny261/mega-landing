@@ -104,7 +104,8 @@ const CustomerSection: React.FC = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={staggerContainer}
-            className="w-full py-16 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50"
+            className="w-full py-28 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50"
+            id='customers'
         >
             <div className="max-w-6xl mx-auto">
                 <motion.div variants={fadeInUp} className="text-center mb-12">
