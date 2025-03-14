@@ -7,17 +7,19 @@ import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
+import CustomerSection from './components/CustomerSection';
 export function App() {
   return <div className="flex flex-col min-h-screen bg-background">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Features />
-        <Dashboard />
-        <Pricing />
-        <Testimonials />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>;
+    <Header />
+    <main className="flex-1">
+      <Hero />
+      <Features />
+      <Dashboard />
+      <Pricing />
+      <Testimonials />
+      <FAQ />
+      <CustomerSection />
+    </main>
+    <Footer />
+  </div>;
 }
