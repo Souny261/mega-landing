@@ -28,14 +28,28 @@ const CustomerLogo: React.FC<CustomerLogoProps> = ({ name, logo, delay }) => (
         variants={fadeInUp}
         className="flex items-center justify-center p-8 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
     >
-        <motion.img
+        {/* <motion.img
             src={logo}
             alt={`${name} uses our inventory management system`}
             className="h-12 max-w-full object-contain"
             whileHover={{ scale: 1.1, opacity: 1 }}
             initial={{ opacity: 0.7, filter: 'grayscale(100%)' }}
             animate={{ opacity: 1, filter: 'grayscale(0%)', transition: { delay: delay / 1000 } }}
-        />
+        /> */}
+
+        <motion.div
+            className='flex flex-row space-x-4 items-center'
+            whileHover={{ scale: 1.1, opacity: 1 }}
+            initial={{ opacity: 0.7, filter: 'grayscale(100%)' }}
+            animate={{ opacity: 1, filter: 'grayscale(0%)', transition: { delay: delay / 1000 } }}
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary animate-fade-in">
+                <path d="M20 12V8h-4V4h-4V0H4v4H0v8h4v-4h4v4h4v4h8v-4h-4v-4h4Z" />
+            </svg>
+            <div className="text-xl font-bold">
+                StockSense
+            </div>
+        </motion.div>
     </motion.div>
 );
 
