@@ -64,7 +64,7 @@ export function Pricing() {
             </ul>
           </div>
           <div className="mt-6">
-            <button className="inline-flex w-full items-center justify-center rounded-md border border-primary bg-background px-4 py-2 text-sm font-medium text-primary shadow-sm hover:bg-muted">
+            <button className="animated-button inline-flex w-full items-center justify-center rounded-md border border-primary bg-background px-4 py-2 text-sm font-medium text-primary shadow-sm hover:bg-muted">
               Start Free Trial
             </button>
           </div>
@@ -114,7 +114,7 @@ export function Pricing() {
             </ul>
           </div>
           <div className="mt-6">
-            <button className="inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90">
+            <button className="animated-button inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90">
               Start Free Trial
             </button>
           </div>
@@ -161,7 +161,7 @@ export function Pricing() {
             </ul>
           </div>
           <div className="mt-6">
-            <button className="inline-flex w-full items-center justify-center rounded-md border border-primary bg-background px-4 py-2 text-sm font-medium text-primary shadow-sm hover:bg-muted">
+            <button className="animated-button inline-flex w-full items-center justify-center rounded-md border border-primary bg-background px-4 py-2 text-sm font-medium text-primary shadow-sm hover:bg-muted">
               Contact Sales
             </button>
           </div>
@@ -179,7 +179,7 @@ export function Pricing() {
               requirements. Our team will work with you to build a custom
               plan.
             </p>
-            <button className="mt-4 inline-flex items-center text-sm font-medium text-primary hover:underline">
+            <button className="animated-button mt-4 inline-flex items-center text-sm font-medium text-primary hover:underline">
               Contact our sales team
             </button>
           </div>

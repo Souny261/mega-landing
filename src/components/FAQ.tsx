@@ -22,45 +22,45 @@ export function FAQ() {
     answer: 'Most customers are up and running within 1-2 days. Our guided onboarding process helps you import your existing inventory data, configure your settings, and train your team. Enterprise implementations with custom integrations may take 1-2 weeks.'
   }];
   return <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center animate-fade-up">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-              FAQ
-            </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Frequently Asked Questions
-            </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Find answers to common questions about StockSense and inventory
-              management.
-            </p>
+    <div className="container px-4 md:px-6">
+      <div className="flex flex-col items-center justify-center space-y-4 text-center animate-fade-up">
+        <div className="space-y-2">
+          <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+            FAQ
           </div>
-        </div>
-        <div className="mx-auto max-w-3xl mt-12 space-y-4">
-          {faqs.map((faq, index) => <div key={index} className="rounded-lg border bg-background shadow-sm transition-all duration-200 hover:shadow-md">
-              <button className="flex w-full items-center justify-between p-4 text-left transition-colors duration-200 hover:bg-accent/5" onClick={() => setOpenItem(openItem === index ? null : index)}>
-                <h3 className="font-medium">{faq.question}</h3>
-                {openItem === index ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-              </button>
-              {openItem === index && <div className="border-t p-4 animate-fade-down">
-                  <p className="text-sm text-muted-foreground">{faq.answer}</p>
-                </div>}
-            </div>)}
-        </div>
-        <div className="mt-12 flex flex-col items-center justify-center space-y-4 text-center">
-          <p className="text-muted-foreground">
-            Still have questions? We're here to help.
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            Frequently Asked Questions
+          </h2>
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Find answers to common questions about StockSense and inventory
+            management.
           </p>
-          <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <button className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
-              Contact Support
-            </button>
-            <button className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
-              Schedule a Demo
-            </button>
-          </div>
         </div>
       </div>
-    </section>;
+      <div className="mx-auto max-w-3xl mt-12 space-y-4">
+        {faqs.map((faq, index) => <div key={index} className="rounded-lg border bg-background shadow-sm transition-all duration-200 hover:shadow-md">
+          <button className="flex w-full items-center justify-between p-4 text-left transition-colors duration-200 hover:bg-accent/5" onClick={() => setOpenItem(openItem === index ? null : index)}>
+            <h3 className="font-medium">{faq.question}</h3>
+            {openItem === index ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+          </button>
+          {openItem === index && <div className="border-t p-4 animate-fade-down">
+            <p className="text-sm text-muted-foreground">{faq.answer}</p>
+          </div>}
+        </div>)}
+      </div>
+      <div className="mt-12 flex flex-col items-center justify-center space-y-4 text-center">
+        <p className="text-muted-foreground">
+          Still have questions? We're here to help.
+        </p>
+        <div className="flex flex-col gap-2 min-[400px]:flex-row">
+          <button className="animated-button inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+            Contact Support
+          </button>
+          <button className="animated-button inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>;
 }
